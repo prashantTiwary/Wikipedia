@@ -1,0 +1,13 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    {{ entryTitle }}
+{% endblock %}
+
+{% block body %}
+
+    {{ entry|safe }}
+    <div class="dropdown-divider"></div><br>
+    <a class="btn btn-info" href="/wiki/{{ entryTitle }}/edit" role="button">Edit page</a>
+
+{% endblock %}
